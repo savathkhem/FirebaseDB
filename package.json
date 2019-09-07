@@ -1,0 +1,22 @@
+{
+  "name": "firebasedb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savathkhem/FirebaseDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savathkhem/FirebaseDB/issues"
+  },
+  "homepage": "https://github.com/savathkhem/FirebaseDB#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
