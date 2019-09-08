@@ -1,9 +1,14 @@
+// Reference from the source below
+// https://youtu.be/7S5Om_tAAnI
+
+
 var firebase = require('firebase').initializeApp({   
     serviceAccount: './services/fir-db-63777-service-account.json',
     databaseURL: 'https://fir-db-63777.firebaseio.com',
 });
 
-var message = {text: 'hey guys & gals & errybody else', timestamp: new Date().toString()};
+var message = {text: 'test', 
+               timestamp: new Date().toString()};
 
 var ref = firebase.database().ref().child('node-clint');
 var logRef = ref.child('log');
@@ -20,7 +25,6 @@ logRef.on('child_removed', function(snap) {
 logRef.on('child_changed', function(snap) {
     console.log('changed', snap.val());
 });
-
 logRef.on('value', function(snap) {
     console.log('value', snap.val());
 });
